@@ -249,7 +249,7 @@ function get20s(array){
   let newArray=[]
   for(let i=0;i<array.length;i++){
   var l = array[i].years.split(' ');
-  if(l[0]>1900 && l[2]<2000){
+  if(l[0]>=1900 && l[2]<2000){
   
   newArray.push(array[i].name)}}
   return newArray}
